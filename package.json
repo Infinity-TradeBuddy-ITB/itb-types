@@ -1,0 +1,19 @@
+{
+  "name": "itb-types",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infinity-TradeBuddy-ITB/itb-types.git"
+  },
+  "author": "",
+  "license": "see in LICENSE",
+  "bugs": {
+    "url": "https://github.com/Infinity-TradeBuddy-ITB/itb-types/issues"
+  },
+  "homepage": "https://github.com/Infinity-TradeBuddy-ITB/itb-types#readme"
+}
