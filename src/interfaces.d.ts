@@ -122,7 +122,7 @@ export interface Stock {
 }
 
 
-export class YPriceData {
+export interface YPriceData {
   id?: string;
   price?: number;
   time?: number;
