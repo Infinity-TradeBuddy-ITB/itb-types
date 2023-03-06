@@ -26,7 +26,7 @@ export interface MovingAverage {
   average: number;
 }
 
-export interface MovingAverageClass {
+export interface MovingAverage {
   data: number[];
   slowWindow: number;
   fastWindow: number;
