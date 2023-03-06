@@ -1,11 +1,11 @@
-import { 
+import {
   MarketHoursType,
   OptionType,
-  Pattern, 
-  PatternDetected, 
-  QuoteType, 
-  StockEventType, 
-  StockTicker 
+  Pattern,
+  PatternDetected,
+  QuoteType,
+  StockEventType,
+  StockTicker
 } from './enums';
 
 export interface Fluctuation {
@@ -26,7 +26,7 @@ export interface MovingAverage {
   average: number;
 }
 
-export interface MovingAverage {
+export interface MovingAverageClass {
   data: number[];
   slowWindow: number;
   fastWindow: number;
@@ -41,28 +41,28 @@ export interface MovingAverage {
 }
 
 export interface PatternResponse {
-	pattern: Pattern;
-	detected: PatternDetected;
+  pattern: Pattern;
+  detected: PatternDetected;
 }
 
 export interface OrderedFlucts {
-	flucts: number;
-	moment: Date;
+  flucts: number;
+  moment: Date;
 }
 
 
 export interface BuysAndSells {
-	type: string;
-	index: number;
-	currPrice: number;
-	timeStamp: Date;
+  type: string;
+  index: number;
+  currPrice: number;
+  timeStamp: Date;
 }
 
 export interface Fluctuations {
-	type: string;
-	index: number;
-	currPrice: number;
-	timeStamp: Date;
+  type: string;
+  index: number;
+  currPrice: number;
+  timeStamp: Date;
 }
 
 export interface StockEvent {
@@ -71,54 +71,54 @@ export interface StockEvent {
 }
 
 export interface Stock {
-	breakPoint: Date;
-	closingTime?: Date;
+  breakPoint: Date;
+  closingTime?: Date;
 
-	// start values
-	startFounds: number;
-	founds: number;
-	currFounds: number;
+  // start values
+  startFounds: number;
+  founds: number;
+  currFounds: number;
 
-	// flags
-	stockName: string;
-	holding: boolean;
-	reasonable: boolean;
+  // flags
+  stockName: string;
+  holding: boolean;
+  reasonable: boolean;
 
-	// sells
-	currPossibleWin: number;
-	lastSell: number;
+  // sells
+  currPossibleWin: number;
+  lastSell: number;
 
-	// fluctuations
-	openValue: number;
-	minFluct: number;
-	maxFluct: number;
-	prevFluct: number;
-	currFluct: number;
+  // fluctuations
+  openValue: number;
+  minFluct: number;
+  maxFluct: number;
+  prevFluct: number;
+  currFluct: number;
 
-	// counters
-	index: number;
-	total: number;
-	tradeCount: number;
-	positiveCounter: number;
-	negativeCounter: number;
-	transactionsNumber: number;
+  // counters
+  index: number;
+  total: number;
+  tradeCount: number;
+  positiveCounter: number;
+  negativeCounter: number;
+  transactionsNumber: number;
 
-	// arrays for data control
-	currFoundsBellowStartVal: number[];
-	buysAndSells: BuysAndSells[];
-	positiveFluctuations: Fluctuations[];
-	negativeFluctuations: Fluctuations[];
-	sells: number[];
-	closeValues: number[];
+  // arrays for data control
+  currFoundsBellowStartVal: number[];
+  buysAndSells: BuysAndSells[];
+  positiveFluctuations: Fluctuations[];
+  negativeFluctuations: Fluctuations[];
+  sells: number[];
+  closeValues: number[];
 
-	// holds
-	holds: number[];
+  // holds
+  holds: number[];
 
-	// exited
-	exited: boolean;
+  // exited
+  exited: boolean;
 
-	// log
-	log: string;
+  // log
+  log: string;
 }
 
 
