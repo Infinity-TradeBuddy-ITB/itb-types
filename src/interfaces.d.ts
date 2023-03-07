@@ -161,7 +161,7 @@ export interface YPriceData {
 
 // TODO: clean up
 
-export type SubscribedStocksEvent = {
+export interface SubscribedStocksEvent {
   event: StockEventType.SUBSCRIBE;
   symbols: StockTicker[];
 }
@@ -174,7 +174,7 @@ export const newSubscribedStockEvent = (): SubscribedStocksEvent => {
   };
 }
 
-export type UnsubscribeStockEvent = {
+export interface UnsubscribeStockEvent {
   event: StockEventType.UNSUBSCRIBE;
   symbol: StockTicker;
 }
@@ -184,7 +184,7 @@ export enum StockEventType {
   UNSUBSCRIBE = "unsub"
 }
 
-export type StockEvent = {
+export interface StockEvent {
   event: StockEventType;
   symbol: StockTicker;
 }
