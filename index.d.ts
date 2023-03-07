@@ -1,2 +1,2 @@
-export * from './dist/src';
+export * from './src';
 export as namespace itbTypes;
