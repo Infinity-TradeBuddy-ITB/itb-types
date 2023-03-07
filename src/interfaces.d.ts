@@ -166,13 +166,7 @@ export interface SubscribedStocksEvent {
   symbols: StockTicker[];
 }
 
-export const newSubscribedStockEvent = (): SubscribedStocksEvent => {
-  const symbols: StockTicker[] = [];
-  return <SubscribedStocksEvent>{
-    event: StockEventType.SUBSCRIBE,
-    symbols: symbols
-  };
-}
+
 
 export interface UnsubscribeStockEvent {
   event: StockEventType.UNSUBSCRIBE;
