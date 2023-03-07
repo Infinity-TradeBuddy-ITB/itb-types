@@ -1,2 +1,2 @@
-export * from './enums.d.js';
-export * from './interfaces.d.js';
+export * from './enums.d.ts';
+export * from './interfaces.d.ts';
