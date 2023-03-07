@@ -1,12 +1,4 @@
-import {
-  MarketHoursType,
-  OptionType,
-  Pattern,
-  PatternDetected,
-  QuoteType,
-  StockEventType,
-  StockTicker
-} from './enums';
+import { StockEventType, StockTicker, MarketHoursType, OptionType, QuoteType, PatternDetected, Pattern } from '../enums/enums';
 
 export interface Fluctuation {
   time: number;

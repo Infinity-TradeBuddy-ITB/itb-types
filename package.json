@@ -2,23 +2,21 @@
   "itb-types": "github:Infinity-TradeBuddy-ITB/itb-types#master",
   "name": "itb-types",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "license": "see license in LICENSE",
+  "description": "A shared library for TypeScript interfaces and enums.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/Infinity-TradeBuddy-ITB/itb-types#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Infinity-TradeBuddy-ITB/itb-types.git"
   },
-  "author": "",
-  "license": "see license in LICENSE",
-  "private": true,
-  "bugs": {
-    "url": "https://github.com/Infinity-TradeBuddy-ITB/itb-types/issues"
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
   },
+  "dependencies": {},
   "devDependencies": {
-    "typescript": "^4.9.4"
-  },
-  "homepage": "https://github.com/Infinity-TradeBuddy-ITB/itb-types#readme",
-  "module": "dist/index.js"
+    "typescript": "^4.5.4"
+  }
 }
