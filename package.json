@@ -19,5 +19,6 @@
   "devDependencies": {
     "typescript": "^4.9.4"
   },
-  "homepage": "https://github.com/Infinity-TradeBuddy-ITB/itb-types#readme"
+  "homepage": "https://github.com/Infinity-TradeBuddy-ITB/itb-types#readme",
+  "module": "dist/index.js"
 }
